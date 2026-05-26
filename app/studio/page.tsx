@@ -17,9 +17,7 @@ const FONTS = [
 
 const TEXT_COLORS = ['#ffffff', '#f5e6c8', '#c9a84c', '#ffc0cb', '#0a0a0a', '#b8d4e8', '#ff4444'];
 
-//const SAMPLE_PHOTOS: string[] = [
-// ...
-//];
+const SAMPLE_PHOTOS: string[] = ['/images/booth-1.jpg'];
 
 type TextBox = {
   id: number;

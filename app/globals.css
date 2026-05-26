@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-sans);
+  --font-serif: var(--font-serif);
+  --animate-scroll: scroll 40s linear infinite;
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-zinc-950 text-zinc-100;
+  }
+}
+
+.custom-summary::-webkit-details-marker {
+  display: none;
+}
+
+.custom-summary {
+  list-style: none;
+  /* Hide default marker */
+}
+
+/* Custom FAQ Summary styles */
+.custom-summary::-webkit-details-marker {
+  display: none;
+}
+
+.custom-summary {
+  list-style-type: none;
+}
